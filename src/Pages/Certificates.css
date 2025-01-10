@@ -1,0 +1,18 @@
+.certificates{
+    background-color: aliceblue;
+    color: black;
+}
+.myCertificate{
+    background-color: transparent;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading h1{
+    margin-top: 20px;
+    font-size: 50px;
+}
+.heading{
+    padding: 20px;
+}

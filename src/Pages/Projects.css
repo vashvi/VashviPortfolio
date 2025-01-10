@@ -1,0 +1,60 @@
+.projects {
+    padding: 50px;
+    background-color: transparent;
+    text-align: center;
+  }
+  
+  .projects h1 {
+    font-size: 2.5em;
+    color: whitesmoke;
+    margin-bottom: 30px;
+  }
+  
+  .projectsList {
+    margin: 0 12%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute blocks evenly with space */
+    gap: 20px;
+  }
+  
+  /* Each project block */
+  .project-block {
+    /* margin: 0 10px 0 10px; */
+    background-color: #fff;
+    padding: 20px;
+    flex-basis: calc(50% - 20px); /* Set each block to take 50% of the width minus gap */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  /* Adjusting project block header */
+  .project-block h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: black;
+  }
+  
+  /* Description paragraph */
+  .project-block p {
+    font-size: 1em;
+    background-color: transparent;
+    color: black;
+  }
+  .project-block img{
+    border-radius: 20px;
+    margin: 0;
+    box-shadow: none;
+    width: 70%;
+    height: 60%;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .project-block {
+      flex-basis: 100%; /* 100% width on smaller screens */
+    }
+  }
+  

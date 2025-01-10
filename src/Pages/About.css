@@ -1,0 +1,77 @@
+.about {
+    display: flex;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+    justify-content: space-evenly;
+    align-items: center; /* Aligns items vertically */
+    padding: 5%; /* Add padding for spacing */
+    margin: 10% 0; /* Space above and below the section */
+    box-sizing: border-box; /* Ensures padding doesn't break layout */
+    padding-bottom: 0;
+}
+
+/* Left section with image */
+.left img {
+    border-radius: 20px;
+    width: 80%;
+    max-width: 400px; /* Limit max image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Right section with text */
+.right {
+    text-align: left;
+    width: 40%; /* Responsive width */
+    padding: 2%;
+    /* padding-top: 6%; */
+    color: whitesmoke;
+}
+
+/* Right section typography */
+.right h1 {
+    font-size: 2.5em; /* Adjust font sizes */
+    margin-bottom: 10px;
+}
+
+.right h3 {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.right button {
+    background-color: magenta;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.right button:hover {
+    background-color: rgb(116, 13, 116);
+}
+
+/* Mobile and tablet responsiveness */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack sections vertically */
+        padding: 10%; /* Add extra padding */
+    }
+    .left, .right {
+        width: 90%; /* Full width on smaller screens */
+        text-align: center; /* Center-align content */
+    }
+    .right h1 {
+        font-size: 2em; /* Adjust heading sizes */
+    }
+    .right h3 {
+        font-size: 1.2em; /* Adjust paragraph sizes */
+    }
+    .right button {
+        width: auto; /* Prevent buttons from stretching */
+    }
+}

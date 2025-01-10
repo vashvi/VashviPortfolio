@@ -1,0 +1,31 @@
+
+.subtitle {
+    position: relative;
+    color: whitesmoke;
+    margin-top: 50px;
+    text-align: center; /* Center-align subtitle */
+}
+
+.subtitle button {
+    background-color: magenta;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15%;
+    transition: all 0.3s ease;
+}
+
+.subtitle button:hover {
+    background-color: white;
+    color: magenta;
+    box-shadow: 0 0 10px rgba(241, 9, 241, 0.7);
+    cursor: pointer;
+}
+.subtitle h3{
+    color: whitesmoke;
+    margin: 10px;
+}
+span{
+    color: magenta;
+
+}

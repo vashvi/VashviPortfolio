@@ -1,0 +1,28 @@
+/* Set background color only for body */
+body {
+  background-color: black;
+  color: white; /* Ensure text is visible on the black background */
+}
+
+.App {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Remove background-color from here */
+}
+
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background: black;
+}
+::-webkit-scrollbar-thumb{
+  background: magenta;
+  border-radius: 10px;
+}

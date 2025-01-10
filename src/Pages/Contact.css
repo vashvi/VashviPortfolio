@@ -1,0 +1,116 @@
+.contact{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: black;
+}
+.upperpart{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+form{
+    max-width: 600px;
+    width: 100%;
+    background-color: aliceblue;
+    padding: 25px 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px magenta;
+    color: #111;
+    margin: 25px;
+}
+
+form h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.input-box{
+    align-items: left;
+}
+
+form .input-box{
+    margin-top: 20px;
+}
+.input-box .mess {
+    height: 150px; /* Set a specific height */
+    resize: none; 
+    overflow: hidden; /* Remove the scrollbar */
+    padding: 10px; /* Add padding for better readability */
+    box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+}
+
+  
+.input-box .field{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(168, 159, 166);
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 15px;
+    color: #111;
+    margin-top: 8px;
+}
+
+.input-box .field .mess{
+    height: 200px;
+    resize: none;
+}
+
+form button{
+    width: 100%;
+    height: 55px;
+    background: #111;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    margin-top: 25px;
+    transition: .5s;
+
+}
+
+form button:hover{
+    background-color: #111;
+}
+
+.contact .lowerpart {
+    /* margin: 50px; */
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #111;
+  }
+  
+  .lowerpart h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .social-links a {
+    color: whitesmoke;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: magenta;
+  }
+  
