@@ -88,7 +88,7 @@ const Contact = () => {
       <div className="lowerpart">
         <h2>Follow Me On</h2>
         <div className="social-links">
-          <a href="www.linkedin.com/in/vashvi-srivastava" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/vashvi-srivastava/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={30} />
           </a>
           <a href="https://github.com/vashvi" target="_blank" rel="noopener noreferrer">
