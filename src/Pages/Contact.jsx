@@ -2,7 +2,7 @@ import React from 'react';
 import './Contact.css';
 // mport './Contact.css'
 import Swal from 'sweetalert2'
-import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeIn } from './variants';
 
