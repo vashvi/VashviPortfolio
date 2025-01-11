@@ -18,43 +18,104 @@
     gap: 20px;
   }
   
-  /* Each project block */
+/* Each project block */
+.project-block {
+  background-color: #fff;
+  padding: 20px;
+  flex-basis: calc(50% - 20px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-block:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 20px whitesmoke;
+}
+
+.project-block::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 0, 255, 0.267);
+  height: 0;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transition: height 0.5s ease;
+  z-index: 0;
+}
+
+.project-block:hover::after {
+  height: 100%;
+}
+
+.project-block h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.project-block p {
+  font-size: 1em;
+  background-color: transparent;
+  color: black;
+  position: relative;
+  padding: 20px;
+  z-index: 1;
+}
+
+.project-block img {
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+  box-shadow: none;
+  width: 70%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
   .project-block {
-    /* margin: 0 10px 0 10px; */
-    background-color: #fff;
-    padding: 20px;
-    flex-basis: calc(50% - 20px); /* Set each block to take 50% of the width minus gap */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+      flex-basis: calc(100% - 20px);
+      padding: 15px;
   }
-  
-  /* Adjusting project block header */
+
   .project-block h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    background-color: transparent;
-    color: black;
+      font-size: 1.2em;
   }
-  
-  /* Description paragraph */
+
   .project-block p {
-    font-size: 1em;
-    background-color: transparent;
-    color: black;
+      font-size: 0.9em;
+      padding: 5px;
   }
-  .project-block img{
-    border-radius: 20px;
-    margin: 0;
-    box-shadow: none;
-    width: 70%;
-    height: 60%;
+
+  .project-block img {
+      width: 80%;
   }
-  
-  /* Responsive adjustments for smaller screens */
-  @media (max-width: 768px) {
-    .project-block {
-      flex-basis: 100%; /* 100% width on smaller screens */
-    }
+}
+
+@media (max-width: 480px) {
+  .project-block {
+      padding: 10px;
   }
-  
+
+  .project-block h2 {
+      font-size: 1em;
+  }
+
+  .project-block p {
+      font-size: 0.8em;
+  }
+
+  .project-block img {
+      width: 90%;
+  }
+}
