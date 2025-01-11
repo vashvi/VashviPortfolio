@@ -2,7 +2,7 @@ import React from 'react';
 import './Contact.css';
 // mport './Contact.css'
 import Swal from 'sweetalert2'
-import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeIn } from './variants';
 
@@ -88,16 +88,16 @@ const Contact = () => {
       <div className="lowerpart">
         <h2>Follow Me On</h2>
         <div className="social-links">
-          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/vashvi-srivastava/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={30} />
           </a>
-          <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/vashvi" target="_blank" rel="noopener noreferrer">
             <FaGithub size={30} />
           </a>
-          <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
-            <FaTwitter size={30} />
+          <a href="https://www.facebook.com/vashvi.srivastava.5/" target="_blank" rel="noopener noreferrer">
+            <FaFacebook size={30} />
           </a>
-          <a href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/clumsy_gal_" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={30} />
           </a>
         </div>
